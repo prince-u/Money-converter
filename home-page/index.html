@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Money converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Money converter</h1>
+      <div class="options">
+        <label for="from">From:</label>
+        <select class="old-currency" id="from">
+          <option value="naira">naira</option>
+          <option value="dollar">dollar</option>
+        </select>
+        <label for="to">To:</label>
+        <select class="new-currency" id="to">
+          <option value="naira">naira</option>
+          <option value="dollar">dollar</option>
+        </select>
+      </div>
+      <input type="number" min="0" onkeypress="return isNumberKey(event)" />
+      <button class="convert-btn">convert</button>
+      <div class="result"></div>
+    </div>
+  </body>
+</html>
